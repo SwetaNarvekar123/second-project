@@ -1,1 +1,235 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bulma/css/bulma.css';
+
+body
+{overflow-y:scroll;
+    position:relative;
+}
+.heading-sec
+{
+    
+    padding:100px;
+     background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.m-auto
+{
+    margin:auto;
+}
+.box-st
+{
+    padding:40px;
+    margin-top:-40px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.list-st .check-box
+{
+   border:2px solid #ccc; 
+   border-radius:50%;
+  
+   width: 24px;
+   margin-right:20px;
+   line-height: 1.3;
+   transition: background-color 0.2s;
+}
+.list-st .complete .check-box
+{
+  background: green;
+  opacity: 1;
+}
+.check-st
+{
+font-size: 15px;
+margin: auto;
+opacity: 0;
+text-align: center;
+transition: opacity 0.2s;
+}
+.list-st:hover .check-st
+{
+background: #eee;
+    opacity: 0.28;
+    
+   width: 24px;
+   line-height: 1.3;
+}
+
+.todo-text
+{
+    display: flex;
+    flex-direction: row;
+}
+ .control-btn
+{
+
+   padding:30px 0;
+   border-bottom: 1px solid #ccc;
+}
+.box {
+    
+    background-color:  #0d4256;
+}
+.color-red
+{
+    color:rgb(179, 4, 4);
+    
+}
+.box1
+{
+    background-color:#62868D;
+    display: block;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    padding: 40px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+#chk-btn {
+    background-color: skyblue;
+}
+
+#chk-btn:checked+.box {
+    text-decoration: line-through;
+}
+.sec-pdd
+{
+    padding:40px 0;
+}
+.footer-bg
+{
+    background: #000;
+    padding: 1rem 1.5rem 1rem;
+    color: #fff;
+    
+}
+.f-16
+{
+    font-size: 14px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+}
+hr
+{
+  border:1px solid #000;
+}
+.height-auto
+{
+    height: auto;
+}
+.logo-width
+{
+    width:100px;
+}
+.navbar
+{
+    background-color: #000;
+}
+  .header-btn
+  {
+    background: rgb(22 163 91);
+    color: #fff;
+    border: none;
+  }
+  .navbar.has-shadow
+  {
+    box-shadow: 0 1px 0 0 #242424;
+  }
+  .header-btn-1
+  {
+    background:  #ed8023;
+    color: #fff;
+    border:none;
+  }
+  .menu-icon
+  {
+    display: none;
+  }
+  .hide 
+  {
+    display: none;
+  }
+  .menu
+  {
+    display: flex;
+    align-items:center;
+  }
+  @media(min-width:940px) {
+  .burger
+  {
+display: none;
+  }
+}
+@media(min-width:940px) {
+    .is-open
+    {
+display: none;
+position: absolute;
+background: #fff;
+width: 100%;
+
+    }
+}
+  @media(max-width:940px) {
+   .menu
+   {
+    display:none
+   }
+   .buttons
+   {
+    justify-content: flex-end;
+   }
+
+        .is-open
+    {
+display: block;
+position: absolute;
+background: #fff;
+width: 100%;
+
+    }
+    .menu-item
+    {
+        border-bottom: 1px solid #ccc;
+    }
+    
+  }
+  .button:hover, .button.is-hovered
+{
+    color: #fff;
+}
+.navbar-burger
+{
+    top:10px;
+}
+.navbar-burger:hover
+{
+    background: transparent;
+}
+.hero-sec
+{
+    background: url("./assets/images/hero.jpg") center center / cover;
+    position: relative;
+}
+.overlay_bg::before {
+	background-color: rgb(0 0 0 / 71%);
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.hero.is-fullheight
+{
+    min-height: 80vh;
+}
+.title 
+{
+    position: relative;
+}
